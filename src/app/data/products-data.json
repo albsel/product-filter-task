@@ -1,0 +1,402 @@
+[
+  {
+    "id": 485034,
+    "erpCode": "412645",
+    "name": "Gnocchetti con grano saraceno",
+    "subtitle": "Kleine Nudeln mit Buchweizenmehl",
+    "region": "Lombardei",
+    "price": 4.5,
+    "basePrice": {
+      "price": "9,00\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "500 g",
+    "manufacturer": "Molino Filippini",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__29123__product_image_listing_tile\/V412645-632-19.png",
+    "properties": [
+      "Neu",
+      "Laktosefrei",
+      "Vegan",
+      "Vegetarisch",
+      "Halal",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "4,50\u00a0\u20ac"
+  },
+  {
+    "id": 284662,
+    "erpCode": "422600",
+    "name": "Tagliolini mit Lachs",
+    "subtitle": "Hartweizengrie\u00dfnudeln",
+    "region": "Toskana",
+    "price": 5.2,
+    "basePrice": {
+      "price": "2,08\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "250 g",
+    "manufacturer": "Lorenzo il Magnifico",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__27760__product_image_listing_tile\/V422600-555-18.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "5,20\u00a0\u20ac"
+  },
+  {
+    "id": 158129,
+    "erpCode": "740052",
+    "name": "Sugo alla puttanesca",
+    "subtitle": "Tomatensauce mit Sardellen und Kapern",
+    "region": "",
+    "price": 9.2,
+    "basePrice": {
+      "price": "16,43\u00a0\u20ac",
+      "unit": "Liter"
+    },
+    "measurement": "580 ml",
+    "manufacturer": "Viani",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__24724__product_image_listing_tile\/v740052-440-17.png",
+    "properties": [
+      "Laktosefrei",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "9,20\u00a0\u20ac"
+  },
+  {
+    "id": 539110,
+    "erpCode": "412675",
+    "name": "Tagliatelle all'uovo N\u00b0132",
+    "subtitle": "Eierbandnudeln",
+    "region": "Kampanien",
+    "price": 4.9,
+    "basePrice": {
+      "price": "1,96\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "250 g",
+    "manufacturer": "Rummo",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__30751__product_image_listing_tile\/V412675-670-19.png",
+    "properties": [
+      "Neu",
+      "Laktosefrei",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "4,90\u00a0\u20ac"
+  },
+  {
+    "id": 560553,
+    "erpCode": "412682",
+    "name": "Penne Lisce Turanici",
+    "subtitle": "Penne aus Durum-Weizen, Bio",
+    "region": "Marken",
+    "price": 6.95,
+    "basePrice": {
+      "price": "13,90\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "500 g",
+    "manufacturer": "Pasta Mancini",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__30172__product_image_listing_tile\/V412682-693-19.png",
+    "properties": [
+      "Neu",
+      "Bio",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "6,95\u00a0\u20ac"
+  },
+  {
+    "id": 6937,
+    "erpCode": "4370",
+    "name": "Dinkel Penne rigate Bio",
+    "subtitle": "Federkiele aus Dinkel",
+    "region": "Abruzzen",
+    "price": 6.95,
+    "basePrice": {
+      "price": "13,90\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "500 g",
+    "manufacturer": "Rustichella",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__17349__product_image_listing_tile\/v4370-084-14.png",
+    "properties": [
+      "Bio",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "6,95\u00a0\u20ac"
+  },
+  {
+    "id": 23834,
+    "erpCode": "4328",
+    "name": "Alfabeto, Bio",
+    "subtitle": "Hartweizengrie\u00dfnudeln, Bio",
+    "region": "Abruzzen",
+    "price": 3.9,
+    "basePrice": {
+      "price": "1,56\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "250 g",
+    "manufacturer": "Rustichella",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__17852__product_image_listing_tile\/v4328a-084-14.png",
+    "properties": [
+      "Bio",
+      "Nicht verf\u00fcgbar"
+    ],
+    "priceFormatted": "3,90\u00a0\u20ac"
+  },
+  {
+    "id": 350137,
+    "erpCode": "412629",
+    "name": "Penne Integrale",
+    "subtitle": "Penne aus Vollkorn-Hartweizengrie\u00df",
+    "region": "Marken",
+    "price": 4.3,
+    "basePrice": {
+      "price": "8,60\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "500 g",
+    "manufacturer": "Pasta Mancini",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__27836__product_image_listing_tile\/V412629-388-17.png",
+    "properties": [
+      "Vegan",
+      "Vegetarisch",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "4,30\u00a0\u20ac"
+  },
+  {
+    "id": 333820,
+    "erpCode": "740076",
+    "name": "Sugo ai pomodorini",
+    "subtitle": "Tomatensauce mit Kirschtomaten, Bio",
+    "region": "Piemont",
+    "price": 8.7,
+    "basePrice": {
+      "price": "4,83\u00a0\u20ac",
+      "unit": "100 ml"
+    },
+    "measurement": "180 ml",
+    "manufacturer": "Cascina San Giovanni",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__27683__product_image_listing_tile\/V740076-538-18.png",
+    "properties": [
+      "Glutenfrei",
+      "Laktosefrei",
+      "Vegan",
+      "Vegetarisch",
+      "Bio",
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "8,70\u00a0\u20ac"
+  },
+  {
+    "id": 6975,
+    "erpCode": "4526",
+    "name": "Linguette",
+    "subtitle": "handgefertigt, 2 mm",
+    "region": "Abruzzen",
+    "price": 7.9,
+    "basePrice": {
+      "price": "3,16\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "250 g",
+    "manufacturer": "Rustichella",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__17480__product_image_listing_tile\/v4526a-089-14.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "7,90\u00a0\u20ac"
+  },
+  {
+    "id": 8151,
+    "erpCode": "7339",
+    "name": "Sugo Condoro",
+    "subtitle": "Tomatensauce mit Gem\u00fcse",
+    "region": "Emilia Romagna",
+    "price": 4.5,
+    "basePrice": {
+      "price": "12,86\u00a0\u20ac",
+      "unit": "Liter"
+    },
+    "measurement": "370 ml",
+    "manufacturer": "Le Conserve della Nonna",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__30468__product_image_listing_tile\/V7339-700-19.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "4,50\u00a0\u20ac"
+  },
+  {
+    "id": 23672,
+    "erpCode": "7897",
+    "name": "Pestato di melanzane e pomodoro secco",
+    "subtitle": "Pestato mit Auberginen und getrockneten Tomaten (27)",
+    "region": "Abruzzen",
+    "price": 9.9,
+    "basePrice": {
+      "price": "6,83\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "145 g",
+    "manufacturer": "Ursini",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__15797__product_image_listing_tile\/v7897-14.png",
+    "properties": [
+      "Nicht verf\u00fcgbar"
+    ],
+    "priceFormatted": "9,90\u00a0\u20ac"
+  },
+  {
+    "id": 19817,
+    "erpCode": "4224",
+    "name": "Foglie d'olivo",
+    "subtitle": "Pasta mit Spinat",
+    "region": "Toskana",
+    "price": 6.5,
+    "basePrice": {
+      "price": "13,00\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "500 g",
+    "manufacturer": "Lorenzo il Magnifico",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__17647__product_image_listing_tile\/v4224a-776.png",
+    "properties": [
+      "Nicht verf\u00fcgbar"
+    ],
+    "priceFormatted": "6,50\u00a0\u20ac"
+  },
+  {
+    "id": 19878,
+    "erpCode": "7307",
+    "name": "Pesto al finocchietto",
+    "subtitle": "Pesto mit Fenchel",
+    "region": "",
+    "price": 6.9,
+    "basePrice": {
+      "price": "5,31\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "130 g",
+    "manufacturer": "La Gallinara",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__15568__product_image_listing_tile\/v7307-792.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "6,90\u00a0\u20ac"
+  },
+  {
+    "id": 8227,
+    "erpCode": "7460",
+    "name": "Pomodoro giallo Marzanella",
+    "subtitle": "gesch\u00e4lte gelbe Tomaten, ganz",
+    "region": "Kampanien",
+    "price": 57.8,
+    "basePrice": {
+      "price": "6,02\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "24 x 400 g",
+    "manufacturer": "Il pomodoro pi\u00f9 buono",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__23277__product_image_listing_tile\/v7460-365-17.png",
+    "properties": [
+      "Nicht verf\u00fcgbar"
+    ],
+    "priceFormatted": "57,80\u00a0\u20ac"
+  },
+  {
+    "id": 24603,
+    "erpCode": "7523",
+    "name": "Yellow Bell Pepper Ketchup",
+    "subtitle": "Ketchup aus gelber Paprika",
+    "region": "",
+    "price": 8.9,
+    "basePrice": {
+      "price": "28,71\u00a0\u20ac",
+      "unit": "Liter"
+    },
+    "measurement": "250 ml",
+    "manufacturer": "Belberry",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__28862__product_image_listing_tile\/V7523-505-18.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "8,90\u00a0\u20ac"
+  },
+  {
+    "id": 129907,
+    "erpCode": "740033",
+    "name": "Horseradish Sauce",
+    "subtitle": "Meerrettich Sauce",
+    "region": "East Yorkshire",
+    "price": 9.9,
+    "basePrice": {
+      "price": "7,07\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "140 g",
+    "manufacturer": "Cartwright & Butler",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__23139__product_image_listing_tile\/v740033-356-17.png",
+    "properties": [
+      "Glutenfrei",
+      "Nicht verf\u00fcgbar"
+    ],
+    "priceFormatted": "9,90\u00a0\u20ac"
+  },
+  {
+    "id": 8122,
+    "erpCode": "7304",
+    "name": "Crema di olive verdi",
+    "subtitle": "Creme von gr\u00fcnen Oliven",
+    "region": "Ligurien",
+    "price": 4.7,
+    "basePrice": {
+      "price": "3,62\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "130 g",
+    "manufacturer": "La Gallinara",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__15980__product_image_listing_tile\/v7304-10.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "4,70\u00a0\u20ac"
+  },
+  {
+    "id": 8201,
+    "erpCode": "7392",
+    "name": "Pesto mit Tomaten und Kapern",
+    "subtitle": "Premium-Qualit\u00e4t aus Pantelleria",
+    "region": "Pantelleria",
+    "price": 9.9,
+    "basePrice": {
+      "price": "9,90\u00a0\u20ac",
+      "unit": "100 g"
+    },
+    "measurement": "100 g",
+    "manufacturer": "La Nicchia",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__17071__product_image_listing_tile\/v7392-224-16.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "9,90\u00a0\u20ac"
+  },
+  {
+    "id": 50396,
+    "erpCode": "740022",
+    "name": "Pomodori pelati di San Marzano Vintage",
+    "subtitle": "San Marzano Tomaten ganz & gesch\u00e4lt",
+    "region": "Kampanien",
+    "price": 2.4,
+    "basePrice": {
+      "price": "6,00\u00a0\u20ac",
+      "unit": "KG"
+    },
+    "measurement": "400 g",
+    "manufacturer": "Il pomodoro pi\u00f9 buono",
+    "image": "https:\/\/d3ljy8tbxzb0o6.cloudfront.net\/freigestellte-produktbilder\/image-thumb__19342__product_image_listing_tile\/v740022-309-16.png",
+    "properties": [
+      "Verf\u00fcgbar"
+    ],
+    "priceFormatted": "2,40\u00a0\u20ac"
+  }
+]
