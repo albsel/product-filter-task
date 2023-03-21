@@ -21,15 +21,18 @@ export class AppComponent {
 
   // Function to generate the property filter options
   getPropertyOptions() {
+    // Declare an empty array to store the property options
     const propertyOptions: {
       label: string;
       value: string;
       selected: boolean;
       count: number;
     }[] = [];
+
+    // Declare an empty object to store the count of products for each property
     const productCounts: { [property: string]: number } = {};
 
-    // Count the number of products for each property
+    // Loop through each product and count the number of products for each property
     this.products.forEach((product) => {
       product.properties.forEach((property) => {
         if (productCounts.hasOwnProperty(property)) {
@@ -40,7 +43,7 @@ export class AppComponent {
       });
     });
 
-    // Create an option for each property, including the product count
+    // Loop through each property and create an option for it with the count of products that have that property
     Object.keys(productCounts).forEach((property) => {
       const count = productCounts[property];
       propertyOptions.push({
@@ -51,11 +54,13 @@ export class AppComponent {
       });
     });
 
+    // Return the array of property options
     return propertyOptions;
   }
 
   // Function to generate the manufacturer filter options
   getManufacturerOptions() {
+    // Declare an array to hold the manufacturer filter options, with an initial empty array
     const manufacturerOptions: {
       label: string;
       value: string;
@@ -63,11 +68,12 @@ export class AppComponent {
       count: number;
     }[] = [];
 
+    // Declare an object to hold the count of products for each manufacturer, with an initial empty object
     const manufacturerCounts: { [manufacturer: string]: number } = {};
 
+    // Loop through each product to count the number of products for each manufacturer
     this.products.forEach((product) => {
       const manufacturer = product.manufacturer;
-
       if (manufacturerCounts.hasOwnProperty(manufacturer)) {
         manufacturerCounts[manufacturer]++;
       } else {
@@ -75,9 +81,9 @@ export class AppComponent {
       }
     });
 
+    // Loop through each manufacturer and create an option, including the product count, and add it to the options array
     Object.keys(manufacturerCounts).forEach((manufacturer) => {
       const count = manufacturerCounts[manufacturer];
-
       manufacturerOptions.push({
         label: `${manufacturer} (${count})`,
         value: manufacturer,
@@ -86,51 +92,47 @@ export class AppComponent {
       });
     });
 
+    // Return the options array
     return manufacturerOptions;
   }
 
-  // property function works with this code..
-  // Function to filter the products based on the selected property and manufacturer filter options
-  filterPropertiesProducts() {
+  filterProducts() {
+    // Get the selected property and manufacturer filter options
     const selectedProperties = this.propertyOptions.filter(
       (option) => option.selected
     );
     const selectedManufacturers = this.manufacturerOptions.filter(
       (option) => option.selected
     );
+
+    // Filter the products based on the selected filter options
     this.filteredProducts = this.products.filter((product) => {
+      // Check if the product has all selected properties
       const hasSelectedProperties = selectedProperties.every((property) =>
         product.properties.includes(property.value)
       );
+
+      // Check if the product has any selected manufacturer
       const hasSelectedManufacturers = selectedManufacturers.some(
         (manufacturer) => product.manufacturer === manufacturer.value
       );
 
-      if (!hasSelectedManufacturers) {
+      // If both property and manufacturer filters are selected, only show products that match both
+      if (selectedProperties.length > 0 && selectedManufacturers.length > 0) {
+        return hasSelectedProperties && hasSelectedManufacturers;
+      }
+      // If only property filter is selected, show products that match any selected property
+      else if (selectedProperties.length > 0) {
         return hasSelectedProperties;
-      } else {
+      }
+      // If only manufacturer filter is selected, show products that match any selected manufacturer
+      else if (selectedManufacturers.length > 0) {
         return hasSelectedManufacturers;
       }
-      // return hasSelectedProperties && hasSelectedManufacturers;
-    });
-  }
-
-  // manufactory function works with this code...
-  filterManufctoryProducts() {
-    const selectedProperties = this.propertyOptions.filter(
-      (option) => option.selected
-    );
-    const selectedManufacturers = this.manufacturerOptions.filter(
-      (option) => option.selected
-    );
-    this.filteredProducts = this.products.filter((product) => {
-      const hasSelectedProperties = selectedProperties.every((property) =>
-        product.properties.includes(property.value)
-      );
-      const hasSelectedManufacturers = selectedManufacturers.some(
-        (manufacturer) => product.manufacturer === manufacturer.value
-      );
-      return hasSelectedProperties && hasSelectedManufacturers;
+      // If no filters are selected, show all products
+      else {
+        return true;
+      }
     });
   }
 }

@@ -1,5 +1,6 @@
 <div class="product-container">
-  <div class="left">
+  <!-- Left Column -->
+  <div class="left-container">
     <div class="filters">
       <div class="filter properties">
         <h4 class="filter-titel">Filter</h4>
@@ -11,12 +12,14 @@
               type="checkbox"
               [value]="option.value"
               [(ngModel)]="option.selected"
-              (change)="filterPropertiesProducts()"
+              (change)="filterProducts()"
             />
           </div>
         </ng-container>
       </div>
-      <div class="filter">
+
+      <!-- Manufacturer Filter -->
+      <div class="filter manufactory">
         <p class="manufactory-titel">Hersteller</p>
         <ng-container *ngFor="let option of manufacturerOptions">
           <div class="checkbox-list">
@@ -25,22 +28,24 @@
               type="checkbox"
               [value]="option.value"
               [(ngModel)]="option.selected"
-              (change)="filterManufctoryProducts()"
+              (change)="filterProducts()"
             />
           </div>
         </ng-container>
       </div>
     </div>
   </div>
-  <div class="right">
+
+  <!-- Right Column -->
+  <div class="right-container">
     <div class="product-grid">
       <div
-        class="card"
+        class="product-card"
         style="width: 16rem"
         *ngFor="let product of filteredProducts"
       >
-        <img class="card-img-top" [src]="product.image" />
-        <div class="card-body">
+        <img class="product-image" [src]="product.image" />
+        <div class="product-card-body">
           <p class="product-name">{{ product.name }}</p>
           <p class="product-price">{{ product.price }} €</p>
           <p class="product-base-price">
