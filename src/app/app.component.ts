@@ -60,40 +60,33 @@ export class AppComponent {
       label: string;
       value: string;
       selected: boolean;
+      count: number;
     }[] = [];
+
+    const manufacturerCounts: { [manufacturer: string]: number } = {};
+
     this.products.forEach((product) => {
       const manufacturer = product.manufacturer;
-      // If the current manufacturer isn't already in the list of options, add it
-      if (
-        !manufacturerOptions.some((option) => option.value === manufacturer)
-      ) {
-        manufacturerOptions.push({
-          label: manufacturer,
-          value: manufacturer,
-          selected: false,
-        });
+
+      if (manufacturerCounts.hasOwnProperty(manufacturer)) {
+        manufacturerCounts[manufacturer]++;
+      } else {
+        manufacturerCounts[manufacturer] = 1;
       }
     });
-    return manufacturerOptions;
-  }
 
-  // manufactory function works with this code...
-  filterManufctoryProducts() {
-    const selectedProperties = this.propertyOptions.filter(
-      (option) => option.selected
-    );
-    const selectedManufacturers = this.manufacturerOptions.filter(
-      (option) => option.selected
-    );
-    this.filteredProducts = this.products.filter((product) => {
-      const hasSelectedProperties = selectedProperties.every((property) =>
-        product.properties.includes(property.value)
-      );
-      const hasSelectedManufacturers = selectedManufacturers.some(
-        (manufacturer) => product.manufacturer === manufacturer.value
-      );
-      return hasSelectedProperties && hasSelectedManufacturers;
+    Object.keys(manufacturerCounts).forEach((manufacturer) => {
+      const count = manufacturerCounts[manufacturer];
+
+      manufacturerOptions.push({
+        label: `${manufacturer} (${count})`,
+        value: manufacturer,
+        selected: false,
+        count: count,
+      });
     });
+
+    return manufacturerOptions;
   }
 
   // property function works with this code..
@@ -119,6 +112,25 @@ export class AppComponent {
         return hasSelectedManufacturers;
       }
       // return hasSelectedProperties && hasSelectedManufacturers;
+    });
+  }
+
+  // manufactory function works with this code...
+  filterManufctoryProducts() {
+    const selectedProperties = this.propertyOptions.filter(
+      (option) => option.selected
+    );
+    const selectedManufacturers = this.manufacturerOptions.filter(
+      (option) => option.selected
+    );
+    this.filteredProducts = this.products.filter((product) => {
+      const hasSelectedProperties = selectedProperties.every((property) =>
+        product.properties.includes(property.value)
+      );
+      const hasSelectedManufacturers = selectedManufacturers.some(
+        (manufacturer) => product.manufacturer === manufacturer.value
+      );
+      return hasSelectedProperties && hasSelectedManufacturers;
     });
   }
 }
