@@ -1,0 +1,54 @@
+<div class="product-container">
+  <div class="left">
+    <div class="filters">
+      <div class="filter properties">
+        <h4 class="filter-titel">Filter</h4>
+        <p class="properties-title">Eigenschaften</p>
+        <ng-container *ngFor="let option of propertyOptions">
+          <div class="checkbox-list">
+            <span class="property-name">{{ option.label }}</span>
+            <input
+              type="checkbox"
+              [value]="option.value"
+              [(ngModel)]="option.selected"
+              (change)="filterPropertiesProducts()"
+            />
+          </div>
+        </ng-container>
+      </div>
+      <div class="filter">
+        <p class="manufactory-titel">Hersteller</p>
+        <ng-container *ngFor="let option of manufacturerOptions">
+          <div class="checkbox-list">
+            <span>{{ option.label }}</span>
+            <input
+              type="checkbox"
+              [value]="option.value"
+              [(ngModel)]="option.selected"
+              (change)="filterManufctoryProducts()"
+            />
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="product-grid">
+      <div
+        class="card"
+        style="width: 16rem"
+        *ngFor="let product of filteredProducts"
+      >
+        <img class="card-img-top" [src]="product.image" />
+        <div class="card-body">
+          <p class="product-name">{{ product.name }}</p>
+          <p class="product-price">{{ product.price }} €</p>
+          <p class="product-base-price">
+            {{ product.basePrice.price }}/{{ product.basePrice.unit }}
+          </p>
+          <p class="product-delivery">Preis inkl. MwSt., zzgl.Versand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
