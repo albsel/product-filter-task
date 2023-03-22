@@ -3,8 +3,8 @@ import productsData from "src/assets/data/products.json"; // Import data from a 
 
 @Component({
   selector: "app-root",
-  templateUrl: "./app.component.html", // Define the template file for the component
-  styleUrls: ["./app.component.scss"], // Define the style file for the component
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
   products = productsData; // Assign the data from the JSON file to the 'products' property
@@ -96,6 +96,10 @@ export class AppComponent {
     return manufacturerOptions;
   }
 
+  /**
+   * Filters the products based on the selected filter options.
+   * The filtered products are stored in the 'filteredProducts' property.
+   */
   filterProducts() {
     // Get the selected property and manufacturer filter options
     const selectedProperties = this.propertyOptions.filter(
