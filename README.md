@@ -1,27 +1,78 @@
-# ProductFilterTask
+Product filter task
+In this test task, you are taking the role of a frontend developer in an ecommerce project.
+The backend team has prepared an API that delivery product data for a listing page.
+Your task now is to:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+1. Show the product data in a grid.
+2. Create two filters that narrow down the shown products.
+   Please have a look at the image below for reference.
+   This task is not about styling, so don’t worry too much making the result look good.
+   The two filters are for product properties and for manufacturers. You can find them in the
+   JSON data under the keys “properties” and “manufacturer”. While a product can have
+   multiple properties, it will only ever have one manufacturer. Once the user selections a filter
+   option, the list should immediately show only the products that match the selected filter.
+   The options in the “properties” filter be applied as logical AND, so selecting two or more
+   options here means that the shown products must match both properties. For example,
+   selecting “Vegan” and “Gluten free” will only show products that are both vegan and gluten
+   free, but not the ones that are only vegan without being gluten free (or the other way
+   around).
+   The “manufacturer” filter is a logical OR, so selecting two or more options from the list
+   should show the products from all selected manufacturers.
+   If, at this point, you find the above requirements too easy to implement, there are two
+   bonus requirements you can add.
+   First, as seen in the screenshot, show the numbers of products that match a filter option. As
+   an example, you might initially have 10 products that are vegan, 6 that are gluten free, and 3
+   that are both. Therefore, initially the filter would show “Vegan (10), Gluten free (6)”. After
+   selecting the gluten free option, the filter would show “Vegan (3), Gluten free (6)”, because
+   of the remaining 6 products, only 3 are also vegan and selecting the vegan option would
+   reduce the shown products to those 3.
+   Second, only show the filter options that are available in the remaining set of products. For
+   example, if you select a manufacturer who does not offer vegan products, the “Vegan”
+   option should no longer show up in the list of properties. Or, if you select “gluten free” and
+   none of the remaining products are also lactose free, the “Lactose free” should be hidden.
 
-## Development server
+###################################################################################################################################################
+###################################################################################################################################################
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# My Angular Project
 
-## Code scaffolding
+This project is a simple Angular application that displays a list of items retrieved from a web service.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
 
-## Build
+- Angular CLI: 15.1.6
+- TypeScript 4.8.4
+- Node.js 16.16.0
+- Package Manager: npm 8.11.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Prerequisites
 
-## Running unit tests
+Before running the project, you must have Node.js and Angular CLI installed on your machine.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
+1. Clone the repository.
+2. Run `npm install` to install the dependencies.
+3. Run `ng serve` to start the development server.
+4. Open `http://localhost:4200` in your web browser to view the application.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Running Tests
 
-## Further help
+To run the unit tests, run `ng test`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request.
+
+## Troubleshooting
+
+If you encounter any issues while running the project, try the following steps:
+
+- Ensure that you have the correct version of Node.js and Angular CLI installed.
+- Make sure that all dependencies are installed by running `npm install`.
+- Check the console for error messages.
+- Search the Angular documentation or Stack Overflow for solutions to common problems.
